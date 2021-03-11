@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.zeroturnaround:zt-zip:1.14" level="project" />
+    <orderEntry type="library" name="org.javassist:javassist:3.27.0-GA" level="project" />
   </component>
 </module>
