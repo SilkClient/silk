@@ -13,7 +13,7 @@ public class Main {
 
 	public static Properties config = new Properties();
 
-	public Main() {
+	public Main() throws NotFoundException, CannotCompileException, IOException {
 		// load config
 		this.loadProperties(config);
 		File inputJar = new File(config.getProperty("INPUT_JAR"));
@@ -30,7 +30,8 @@ public class Main {
 		jarHandler.modifyJarFiles(inputJar, removeFiles);
 
 		ClassPool pool = ClassPool.getDefault();
-		ClassPath classPath = pool.insertClassPath(inputJar.getAbsolutePath());
+		String absolutePath = inputJar.getAbsolutePath();
+		ClassPath classPath = pool.insertClassPath(absolutePath);
 
 		//Make hack method
 		CtClass cc = pool.get(mainClass);
