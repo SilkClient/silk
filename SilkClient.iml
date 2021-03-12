@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="minecraft" name="Minecraft">
+      <configuration>
+        <autoDetectTypes>
+          <platformType>MIXIN</platformType>
+        </autoDetectTypes>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -10,5 +19,9 @@
     <orderEntry type="library" name="mixin-0.8.2" level="project" />
     <orderEntry type="library" name="org.lwjgl.lwjgl:lwjgl_util:2.9.3" level="project" />
     <orderEntry type="library" name="org.jetbrains.kotlin:kotlin-stdlib:1.4.31" level="project" />
+    <orderEntry type="library" name="org.apache.commons:commons-lang3:3.12.0" level="project" />
+    <orderEntry type="library" name="com.google.guava:guava:30.1-jre" level="project" />
+    <orderEntry type="library" name="com.google.code.gson:gson:2.8.6" level="project" />
+    <orderEntry type="library" name="authlib-1.5.25" level="project" />
   </component>
 </module>

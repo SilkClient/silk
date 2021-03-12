@@ -130,7 +130,10 @@ public abstract class MixinMinecraft {
 		hyperiumMinecraft.runTickKeyboard();
 	}
 
-	@Inject(
+
+
+	// TODO: THIS IS BLOAT, CLEAN UP AT SOME POINT
+	/*@Inject(
 			method = "dispatchKeypresses",
 			at = @At(
 					value = "INVOKE",
@@ -144,7 +147,7 @@ public abstract class MixinMinecraft {
 		IChatComponent chatComponent = ScreenShotHelper.saveScreenshot(mcDataDir, displayWidth, displayHeight, framebufferMc);
 		new TextComponent(chatComponent).chat();
 		ci.cancel();
-	}
+	}*/
 
 	/**
 	 * Invoked once the player has pressed mouse button 1
