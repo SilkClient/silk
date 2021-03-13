@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="paulscode_sound">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/paulscode_sound.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

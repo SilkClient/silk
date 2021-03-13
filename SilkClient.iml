@@ -23,5 +23,10 @@
     <orderEntry type="library" name="com.google.guava:guava:30.1-jre" level="project" />
     <orderEntry type="library" name="com.google.code.gson:gson:2.8.6" level="project" />
     <orderEntry type="library" name="authlib-1.5.25" level="project" />
+    <orderEntry type="library" name="commons-io:commons-io:2.8.0" level="project" />
+    <orderEntry type="library" name="org.apache.logging.log4j:log4j-core:2.14.1" level="project" />
+    <orderEntry type="library" name="icu4j-4.8.2" level="project" />
+    <orderEntry type="library" name="io.netty:netty-all:4.1.60.Final" level="project" />
+    <orderEntry type="library" name="paulscode_sound" level="project" />
   </component>
 </module>
