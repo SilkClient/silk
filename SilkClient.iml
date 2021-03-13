@@ -29,5 +29,6 @@
     <orderEntry type="library" name="io.netty:netty-all:4.1.60.Final" level="project" />
     <orderEntry type="library" name="paulscode_sound" level="project" />
     <orderEntry type="library" name="twitch-6.5" level="project" />
+    <orderEntry type="library" name="MojangAPI-1.0" level="project" />
   </component>
 </module>
