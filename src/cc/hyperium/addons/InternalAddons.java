@@ -17,24 +17,9 @@
 
 package cc.hyperium.addons;
 
-import cc.hyperium.addons.customcrosshair.CustomCrosshairAddon;
-import cc.hyperium.addons.sidebar.SidebarAddon;
-
 public class InternalAddons {
-
-    private final CustomCrosshairAddon customCrosshairAddon;
-    private final SidebarAddon sidebarAddon;
-
     public InternalAddons() {
-        customCrosshairAddon = ((CustomCrosshairAddon) new CustomCrosshairAddon().init());
-        sidebarAddon = ((SidebarAddon) new SidebarAddon().init());
-    }
-
-    public CustomCrosshairAddon getCustomCrosshairAddon() {
-        return customCrosshairAddon;
-    }
-
-    public SidebarAddon getSidebarAddon() {
-        return sidebarAddon;
     }
 }
+
+// Cleaned up during the de-bloating :)

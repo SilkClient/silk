@@ -160,7 +160,7 @@ public abstract class MixinMinecraft {
 	}
 
 	/**
-	 * Invoked once the player has pressed mouse button 1
+	 * Invoked once the player has pressed mouse button 2
 	 *
 	 * @param ci {@see org.spongepowered.asm.mixin.injection.callback.CallbackInfo}
 	 */

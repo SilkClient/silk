@@ -42,14 +42,6 @@ public class CommandDebug implements BaseCommand {
 
     private static boolean isPremium;
 
-    private static void tryChromaHUD(StringBuilder builder) {
-        try {
-            builder.append("ChromaHUD: ").append(printer.toJson(ChromaHUDApi.getInstance().getConfig().getObject()));
-        } catch (Exception e) {
-            builder.append("ChromaHUD: Error");
-        }
-    }
-
     private static void tryConfig(StringBuilder builder) {
         try {
             Hyperium.CONFIG.save();
@@ -69,13 +61,8 @@ public class CommandDebug implements BaseCommand {
 
     private static void tryLevelhead(StringBuilder builder) {
         try {
-            builder.append("Count: ").append(Hyperium.INSTANCE.getModIntegration().getLevelhead().count).append("\n");
-            builder.append("Wait: ").append(Hyperium.INSTANCE.getModIntegration().getLevelhead().wait).append("\n");
             builder.append("Hypixel: ").append(HypixelDetector.getInstance().isHypixel()).append("\n");
-            builder.append("Remote Status: ").append(Sk1erMod.getInstance().isEnabled()).append("\n");
             builder.append("Local Stats: ").append(HypixelDetector.getInstance().isHypixel()).append("\n");
-            builder.append("Callback: ").append(Sk1erMod.getInstance().getResponse()).append("\n");
-            builder.append("Callback_types: ").append(Levelhead.getInstance().getTypes()).append("\n");
         } catch (Exception e) {
             builder.append("Levelhead: Error");
         }
@@ -128,16 +115,10 @@ public class CommandDebug implements BaseCommand {
         tryConfig(builder);
 
         builder.append("\n\n");
-        tryChromaHUD(builder);
-
-        builder.append("\n\n");
         tryKeybinds(builder);
 
         builder.append("\n\n");
         tryLevelhead(builder);
-
-        builder.append("\n\n");
-        builder.append("Levelhead");
 
         builder.append("\n");
 
