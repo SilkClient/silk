@@ -28,5 +28,6 @@
     <orderEntry type="library" name="icu4j-4.8.2" level="project" />
     <orderEntry type="library" name="io.netty:netty-all:4.1.60.Final" level="project" />
     <orderEntry type="library" name="paulscode_sound" level="project" />
+    <orderEntry type="library" name="twitch-6.5" level="project" />
   </component>
 </module>
